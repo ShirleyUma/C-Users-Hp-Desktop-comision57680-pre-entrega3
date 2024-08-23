@@ -1,0 +1,164 @@
+/*presentacion*/
+.presentacion{
+    width: 100%;
+    height: 31.25rem;
+    padding: 6.25rem;
+    background-image: url("../assets/img/vinoteca.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-weight: bolder;
+    font-size: 200%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+
+/*seleccion de vinos*/
+
+/*malbec*/
+
+.container{
+    margin-top: 1.25rem;
+}
+
+h3{
+    width: 100%;
+    height: 3.125rem;
+    padding: 3.125rem;
+    background-color: map-get($colores, color1);
+    text-align: center;
+    @include flex(row, wrap, center, center, 1.25rem);
+    font-size: xx-large;
+}
+
+.malbec{
+    display: grid;
+    width: 100%;
+    height: 400px;
+    padding: 1.875rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1.25rem;
+    background-color: map-get($colores, color2);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.img-malbec{
+    grid-column: 1/3;
+    grid-row: 1/4;
+    justify-self:end;
+    align-items: center;
+}
+
+.malbec-div{
+    grid-column: 3/4;
+    grid-row: 1/4;
+    @include flex(column, wrap, center, center, 1.25rem);
+}
+
+.malbec-div button{
+    margin: 1.25rem;
+    padding: .3125rem;
+    border: 5px solid brown;
+    border-radius: 20px;
+}
+
+.malbec button{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+
+.cabernet{
+    @extend .malbec;
+    grid-template-rows: repeat(3,1fr);
+    background-color:map-get($colores, color3);
+}
+
+.img-cabernet{
+    grid-column: 3/5;
+    grid-row: 1/4;
+    justify-content:start;
+    align-items: center;
+}
+
+.cabernet-div{
+    grid-column: 1/3;
+    grid-row: 1/4;
+    @include flex(column, wrap, flex-end, center, 1.25rem);
+}
+
+.cabernet-div button{
+    margin: 1.25rem;
+    padding: .3125rem;
+    border: 5px solid brown;
+    border-radius: 20px;
+}
+
+
+.cabernet button{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+
+.merlot{
+    @extend .cabernet;
+    grid-template-rows: repeat(3,1fr);
+    background-color: map-get($colores, color4);
+}
+
+.img-merlot{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.merlot-div{
+    grid-column: 3/4;
+    grid-row: 1/4;
+    gap: 1.25rem;
+}
+
+.merlot-div button{
+    margin: 1.25rem;
+    padding: .3125rem;
+    border: 5px solid brown;
+    border-radius: 20px;
+}
+
+
+
+
+/*nosotros*/
+.sobre-nosotros{
+    background-color: brown;
+    text-align: justify;/*ajusta el texto a toda la pagina*/
+    text-indent: .625rem;/*sangria*/
+}
+.sobre-nosotros h2{
+    color: burlywood;
+}
+.sobre-nosotros p{
+    color: cornsilk;
+}
+
+/*UBICACION*/
+h2{
+    width: 100%;
+    height: 3.125rem;
+    padding: 3.125rem;
+    background-color: map-get($colores, color1);
+    text-align: center;
+    @include flex(row, wrap, center, center, 1.25rem);
+    font-size: xx-large;
+}

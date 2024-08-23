@@ -1,0 +1,29 @@
+@media(max-width: 375px){
+
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .presentacion{
+        width: 250%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .container{
+        width: 250%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .whats img{
+        display: flex;
+        bottom: 1.25rem;
+        right: 1.25rem;
+    }
+}

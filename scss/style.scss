@@ -1,0 +1,20 @@
+/*UTILITIES*/
+
+@import"./utilities/variables";
+@import"./utilities/maps";
+@import"./utilities/mixin";
+
+/*BASE*/
+@import"./base/reset";
+
+/*LAYOUT*/
+@import"./layout/header";
+@import"./layout/main";
+@import"./layout/footer";
+
+/*COMPONENTES*/
+@import"./components/card";
+
+/*MEDIA QUIERIES*/
+@import"./layout/media/media768";
+@import"./layout/media/media375";

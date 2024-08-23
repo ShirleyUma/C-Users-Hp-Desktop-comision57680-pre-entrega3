@@ -1,0 +1,33 @@
+
+/*INDEX*/
+.header{
+    display: flex;
+}
+
+.titulo-sitio{
+    width: 100%;
+    margin-left: 1.25rem;
+    font-size: 400%;
+    background-color: $color-fondo;
+}
+
+/*navegador*/
+
+.navbar{
+    width: 100%;
+    font-size: x-large;
+    background-color: $color-fondo;
+    @include flex(row, nowrap, flex-end, end, 20px);
+    padding: 1.25rem;
+    top: 0;
+    
+}
+
+ul{
+    list-style: none;/*saca los puntos*/
+}
+
+ul li a{
+    text-decoration: none; /*saca el subrayado*/
+    color: $color-fuente;
+}

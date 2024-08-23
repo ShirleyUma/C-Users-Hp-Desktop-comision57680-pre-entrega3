@@ -1,0 +1,289 @@
+/*UTILITIES*/
+/*BASE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*LAYOUT*/
+/*INDEX*/
+.header {
+  display: flex;
+}
+
+.titulo-sitio {
+  width: 100%;
+  margin-left: 1.25rem;
+  font-size: 400%;
+  background-color: rgba(128, 128, 128, 0.18);
+}
+
+/*navegador*/
+.navbar {
+  width: 100%;
+  font-size: x-large;
+  background-color: rgba(128, 128, 128, 0.18);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: end;
+  gap: 20px;
+  padding: 1.25rem;
+  top: 0;
+}
+
+ul {
+  list-style: none; /*saca los puntos*/
+}
+
+ul li a {
+  text-decoration: none; /*saca el subrayado*/
+  color: black;
+}
+
+/*presentacion*/
+.presentacion {
+  width: 100%;
+  height: 31.25rem;
+  padding: 6.25rem;
+  background-image: url("../assets/img/vinoteca.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-weight: bolder;
+  font-size: 200%;
+  text-align: center;
+  justify-content: space-around;
+}
+
+/*seleccion de vinos*/
+/*malbec*/
+.container {
+  margin-top: 1.25rem;
+}
+
+h3 {
+  width: 100%;
+  height: 3.125rem;
+  padding: 3.125rem;
+  background-color: rgb(175, 143, 111);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: xx-large;
+}
+
+.malbec, .cabernet, .merlot {
+  display: grid;
+  width: 100%;
+  height: 400px;
+  padding: 1.875rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.25rem;
+  background-color: rgb(167, 146, 119);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.img-malbec {
+  grid-column: 1/3;
+  grid-row: 1/4;
+  justify-self: end;
+  align-items: center;
+}
+
+.malbec-div {
+  grid-column: 3/4;
+  grid-row: 1/4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.malbec-div button {
+  margin: 1.25rem;
+  padding: 0.3125rem;
+  border: 5px solid brown;
+  border-radius: 20px;
+}
+
+.malbec button, .cabernet button, .merlot button {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.cabernet, .merlot {
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgb(209, 187, 158);
+}
+
+.img-cabernet {
+  grid-column: 3/5;
+  grid-row: 1/4;
+  justify-content: start;
+  align-items: center;
+}
+
+.cabernet-div {
+  grid-column: 1/3;
+  grid-row: 1/4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.cabernet-div button {
+  margin: 1.25rem;
+  padding: 0.3125rem;
+  border: 5px solid brown;
+  border-radius: 20px;
+}
+
+.cabernet button, .merlot button {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.merlot {
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgb(234, 216, 192);
+}
+
+.img-merlot {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.merlot-div {
+  grid-column: 3/4;
+  grid-row: 1/4;
+  gap: 1.25rem;
+}
+
+.merlot-div button {
+  margin: 1.25rem;
+  padding: 0.3125rem;
+  border: 5px solid brown;
+  border-radius: 20px;
+}
+
+/*nosotros*/
+.sobre-nosotros {
+  background-color: brown;
+  text-align: justify; /*ajusta el texto a toda la pagina*/
+  text-indent: 0.625rem; /*sangria*/
+}
+
+.sobre-nosotros h2 {
+  color: burlywood;
+}
+
+.sobre-nosotros p {
+  color: cornsilk;
+}
+
+/*UBICACION*/
+h2 {
+  width: 100%;
+  height: 3.125rem;
+  padding: 3.125rem;
+  background-color: rgb(175, 143, 111);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: xx-large;
+}
+
+/*pie de pagina*/
+.whats {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+}
+
+/*COMPONENTES*/
+/*MEDIA QUIERIES*/
+/*media queries*/
+@media (max-width: 768px) {
+  .titulo-sitio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0);
+    font-size: medium;
+  }
+  .malbec, .cabernet, .merlot {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    padding: 1.875rem;
+    gap: 1.25rem;
+  }
+  .merlot {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    padding: 1.875rem;
+  }
+}
+.whats img {
+  display: flex;
+  bottom: 1.25rem;
+  right: 1.25rem;
+}
+
+@media (max-width: 375px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .presentacion {
+    width: 250%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: 250%;
+    display: flex;
+    flex-direction: column;
+  }
+  .whats img {
+    display: flex;
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

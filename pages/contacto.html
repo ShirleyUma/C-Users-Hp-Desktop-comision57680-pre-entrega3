@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <!--<img src="./assets/img/vinoteca.jpg" alt="vinoteca"> ver si pongo o no la imagen aca-->
+            <h1 class="titulo-sitio">Vinoteca</h1>
+            <nav class="navbar">
+                <ul class="navbar">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./pages/bodegas.html">Bodegas</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/ubicacion.html">Ubicacion</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Contacto</legend>
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" name="Nombre" placeholder="ingresa tu nombre aqui" required>   
+
+                <label for="Masculino">Masculino</label>
+                <input type="radio" id="Masculino" name="sexo">
+                <label for="Femenino">Femenino</label>
+                <input type="radio" id="Femenino" name="sexo">
+
+                <label for="pass">Contraseña</a></label>
+            <input type="password" name="pass" id="pass" placeholder="ingresa tu contraseña aqui" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferencias</legend>
+                <label for="Variedad">Selecciona tus opciones</label>
+            <select name="Variedad" id="Variedad">
+                <option value="vm">Malbec</option>
+                <option value="vc">Cabernet</option>
+                <option value="ve">Espumantes</option>
+            </fieldset>
+
+            <fieldset>
+                <legend>Te escuchamos</legend>
+                <label for="texto">Envianos tus comentarios</label>
+                <textarea name="texto" id="texto" rows="5" cols="120"></textarea>
+            </fieldset>
+
+            <label for="Suscribirte">Acepto terminos y condiciones</label>
+            <input type="checkbox" name="Suscribirte">
+
+            <input type="submit" value="enviar">
+            </select>
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
